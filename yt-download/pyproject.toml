@@ -1,0 +1,27 @@
+[project]
+name = "yt-download"
+version = "0.1.0"
+description = "以 yt-dlp 下載 YouTube 影片與音樂的桌面工具（customtkinter 介面）"
+readme = "README.md"
+authors = [
+    { name = "Silent", email = "joe25142021@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "customtkinter>=6.0.0",
+    "imageio-ffmpeg>=0.6.0",
+    "yt-dlp>=2025.9.5",
+]
+
+[project.scripts]
+yt-download = "yt_download:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.22.3",
+    "pytest>=9.1.1",
+]
