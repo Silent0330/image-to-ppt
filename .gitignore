@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# Secrets / local data
+youtube_cookies.txt
+*.mp4
+*.mp3
+*.webm
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
